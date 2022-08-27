@@ -16,4 +16,10 @@ def btn_click(item):
     input_text.set(expression)
 
 #'btn_clear()' clears the input field
+def btn_clear():
+    global expression
+    expression = " "
+    input_text.set(" ")
+
+
 
