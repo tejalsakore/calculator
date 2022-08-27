@@ -32,4 +32,10 @@ expression = " "
 # 'StringVar()' is used to get the instance of input field
 input_text = StringVar()
 
+# creating a frame for the input field
+input_frame = Frame(window,width = 312, height = 50,bd=0, highlightbackground="black", highlightcolor="black", highlightthickness=1)
+input_frame.pack(side =TOP)
+
+
+
 
