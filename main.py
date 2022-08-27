@@ -21,5 +21,15 @@ def btn_clear():
     expression = " "
     input_text.set(" ")
 
+#'btn_equal' calculates the expression present in input field
+def btn_equal():
+    global expression
+    result = str(eval(expression)) #eval() evaluates the string expression directly
+    input_text.set(result)
+    expression = " "
+
+expression = " "
+# 'StringVar()' is used to get the instance of input field
+input_text = StringVar()
 
 
