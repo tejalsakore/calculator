@@ -36,6 +36,16 @@ input_text = StringVar()
 input_frame = Frame(window,width = 312, height = 50,bd=0, highlightbackground="black", highlightcolor="black", highlightthickness=1)
 input_frame.pack(side =TOP)
 
+# creating a input field inside the 'Frame'
+input_field = Entry(input_frame, font =('arial',18,'bold'), textvariable = input_text, width = 50, bg= "#eee",bd =0,justify=RIGHT)
+input_field.grid(row = 0, column = 0)
+input_field.pack(ipady = 10) # 'ipady' is internal padding to increase the height of input field
 
+# creating another 'Frame' for the button below the 'input_frame'
+btns_frame = Frame(window,width = 312,height = 272.5,bg = "grey")
+btns_frame.pack()
 
-
+# first row
+clear = Button(btns_frame, text = "C", fg = "black", width = 32, height = 3, bd = 0 ,bg = "#eee", cursor = "hand2", command = lambda : btn_clear()).grid(row=0,column=0,columnspan =3,padx=1,pady=1)  
+divide = Button(btns_frame, text = "/", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#eee", cursor = "hand2", command = lambda : btn_click("/")).grid(row=0,column=3,padx=1,pady=1)
+mainloop()
