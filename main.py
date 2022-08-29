@@ -54,4 +54,16 @@ seven = Button(btns_frame, text = "7", fg = "black", width = 10, height = 3, bd 
 eight = Button(btns_frame, text = "8", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click(8)).grid(row=1,column=1,padx=1,pady=1)
 nine = Button(btns_frame, text = "9", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click(9)).grid(row=1,column=2,padx=1,pady=1)
 multiply = Button(btns_frame, text = "*", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click("*")).grid(row=1,column=3,padx=1,pady=1)
+
+# third row
+four = Button(btns_frame, text = "4", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click(4)).grid(row=2,column=0,padx=1,pady=1)
+five = Button(btns_frame, text = "5", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click(5)).grid(row=2,column=1,padx=1,pady=1)
+six = Button(btns_frame, text = "6", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click(6)).grid(row=2,column=2,padx=1,pady=1)
+add = Button(btns_frame, text = "+", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click("+")).grid(row=2,column=3,padx=1,pady=1)
+
+# fourth row
+one = Button(btns_frame, text = "1", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click(1)).grid(row=3,column=0,padx=1,pady=1)
+two = Button(btns_frame, text = "2", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click(2)).grid(row=3,column=1,padx=1,pady=1)
+three = Button(btns_frame, text = "3", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click(3)).grid(row=3,column=2,padx=1,pady=1)
+sub = Button(btns_frame, text = "-", fg = "black", width = 10, height = 3, bd = 0 ,bg = "#fff", cursor = "hand2", command = lambda : btn_click("-")).grid(row=3,column=3,padx=1,pady=1)
 mainloop()
